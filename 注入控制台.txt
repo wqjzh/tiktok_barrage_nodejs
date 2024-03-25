@@ -1,0 +1,3 @@
+var scriptElement = document.createElement('script')
+scriptElement.src = 'https://wqjzh.github.io/tiktok_barrage_nodejs/client.js?t=' + Math.random()
+document.body.appendChild(scriptElement)
