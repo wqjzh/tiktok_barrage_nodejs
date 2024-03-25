@@ -2,14 +2,14 @@
 
 ```node
 npm i // 或 cnpm i
-npm run dev
+点击“启动.bat”,这个是在当前目录下运行“npm run dev”的批处理文件。
 ```
 
 - 2.进入直播间页面，打开浏览器按 F12 控制台 注入下面代码
 
 ```javascript
 var scriptElement = document.createElement('script')
-scriptElement.src = 'https://jiansenc.github.io/tiktok_barrage_nodejs/client.js?t=' + Math.random()
+scriptElement.src = 'https://wqjzh.github.io/tiktok_barrage_nodejs/client.js?t=' + Math.random()
 document.body.appendChild(scriptElement)
 ```
 
@@ -63,3 +63,6 @@ document.body.appendChild(scriptElement)
 
 考虑到编程语言环境问题,使用易语言开发了 WSLINK.exe(易语言编写请误杀),
 启动软件后开启 websocket 服务 ws://127.0.0.1:9527 , 其他编程语言或前端直接监听就好了。
+
+以上所有内容来源于“https://github.com/jiansenc/tiktok_barrage_nodejs.git”这位大佬的源码，我只是更改了几个变量，算是一个纯小白，通过AI的辅助实现的更改。
+但是现在功能好像只有采集弹幕消息和礼物消息，对于用户信息、进出场消息和点赞消息并没有实现采集。
